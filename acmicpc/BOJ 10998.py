@@ -20,5 +20,9 @@ import sys
 # print("Three numbers :", num4_1, num4_2, num4_3)
 
 # Case 5 : 두 개의 정수 입력받기(한 줄에 입력받기) input : 34 19
-num5_1, num5_2 = map(int, sys.stdin.readline().split())
-print(num5_1, num5_2)
+#num5_1, num5_2 = map(int, sys.stdin.readline().split())
+#print(num5_1, num5_2)
+
+# Case 6: 열 개의 정수 입력받기(리스트를 활용)
+numbers6 = list(map(int, sys.stdin.readline().split()))
+print(numbers6)

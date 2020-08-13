@@ -1,9 +1,7 @@
-print(1)
-print("Hello World!")
+num = 1
 
-num = int(input("Enter a number : "))
-print(num)
-print(type(num))
+while(num < 5) :
+    print(num)
+    num += 1
 
-num1, num2 = map(int, input().split())
-print(num1, num2)
+print("Finish")
