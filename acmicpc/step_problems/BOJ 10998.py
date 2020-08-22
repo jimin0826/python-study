@@ -25,4 +25,4 @@ import sys
 
 # Case 6: 열 개의 정수 입력받기(리스트를 활용)
 numbers6 = list(map(int, sys.stdin.readline().split()))
-print(numbers6)
+print(sum(numbers6))

@@ -2,7 +2,7 @@ import sys
 
 numList = list(map(int, sys.stdin.readline().split()))
 
-count_array = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+count_array = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 for i in range(len(numList)):
     count_array[numList[i]] += 1    

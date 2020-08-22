@@ -12,4 +12,3 @@ for i in range(1,N):
         min_num = numList[i]
 
 print(min_num, max_num)
-print(help(.append()))
