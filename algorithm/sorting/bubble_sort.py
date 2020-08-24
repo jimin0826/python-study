@@ -11,7 +11,14 @@ def bubbleSort(arr):
       print(i, j, arr)
   return arr
 
+def inverse_bubbleSort(arr):
+  for i in range(len(arr)-1):
+    for j in range(len(arr)-i-1):
+      if(arr[len(arr)-j-1] < arr[len(arr)-j-2]):
+        swap(arr, len(arr)-j-1, len(arr)-j-2)
+    print(i, j, arr)
+  return arr
 
 myarr = [6, 3, 2, 9, 10, 7, 1, 5]
-myarr = bubbleSort(myarr)
+myarr = inverse_bubbleSort(myarr)
 print(myarr)

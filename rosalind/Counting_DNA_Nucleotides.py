@@ -1,9 +1,10 @@
 # rosalind BioInformatics Stronghold 
 # Counting DNA Nucleotides
+import sys
 
 dna_string = input()
-counting_dna = {
-  'A': 0, 'C': 0, 'G': 0, 'T': 0,
+counting_dna = { 
+  'A': 0, 'C': 0, 'G': 0, 'T': 0, 
 }
 
 for alphabet in dna_string :
