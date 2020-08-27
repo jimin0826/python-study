@@ -1,6 +1,5 @@
 import sys
 
-
 def insertionSort(arr):
   n = len(arr)
   for i in range(1, n):
@@ -12,6 +11,14 @@ def insertionSort(arr):
         arr[j] = temp
         break
   return arr
+
+# To Do : inverse_insertionSort : sorted arr from the end of the list
+
+def inverse_insertionSort(arr):
+  n = len(arr)
+  for i in range(n-1, -1, -1) :
+    temp = arr[i] 
+    ...
 
 A = [6, 3, 2, 9, 10, 7, 1, 5]
 A = insertionSort(A)
