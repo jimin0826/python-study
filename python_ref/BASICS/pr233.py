@@ -26,13 +26,13 @@ for j in range(2):
 
 print('세로평균:', end = '')
 for e in colAverageList:
-  print(round(e), end = '')
+  print(round(e), end = ' ')
 print()
 
 sum = 0
 for i in range(3):
   for j in range(2):
     sum += numbersList[i][j]
-print(sum /6)
+print(sum /6) 
     
 

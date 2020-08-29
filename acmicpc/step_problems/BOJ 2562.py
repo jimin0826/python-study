@@ -11,5 +11,5 @@ for i in range(9):
         max_num = numList[i]
         max_num_index = i
 
-print(max_num)s
+print(max_num)
 print(max_num_index + 1)

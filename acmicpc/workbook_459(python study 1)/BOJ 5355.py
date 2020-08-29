@@ -1,7 +1,7 @@
 cases = int(input())
 
-for i in range(cases):
-  mars = list(map(str, input().split()))
+for _ in range(cases):
+  mars = input().split()
   answer = 0
   for i in range(len(mars)):
     if i == 0:
@@ -14,4 +14,4 @@ for i in range(cases):
       elif mars[i] == "@":
         answer *= 3
 
-print("%0.2f" % answer)
+  print("%0.2f" % answer)
