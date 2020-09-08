@@ -1,14 +1,20 @@
 import sys
 
-N = int(sys.stdin.readline())
-listA = []
-number = 0
+while True: 
+  N = int(sys.stdin.readline())
+  if N == -1: 
+    break
 
-for i in range(1, N+1):
-  if N % i == 0:
-    listA.append(i)
-print(listA)
-for i in range(len(listA)):
-  number += listA(i)
+  listA = []
+  number = 0
+  for i in range(1, N):
+    if N % i == 0:
+      listA.append(i)
+  for i in range(len(listA)):
+    number += listA[i]
 
-print(number)
+
+  if N == number:
+    print(f'{N} = {" + ".join(map(str, listA))}')
+  else: 
+    print(f'{N} is NOT perfect.')
