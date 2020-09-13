@@ -48,3 +48,5 @@ class LinkedList:
 
 LinkedList = LinkedList()
 LinkedList.insert(3)
+LinkedList.insert(4)
+LinkedList.insert(5)
