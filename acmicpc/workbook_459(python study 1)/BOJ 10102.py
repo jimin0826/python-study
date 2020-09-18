@@ -14,3 +14,5 @@ elif A == B:
   print('Tie')
 else:
   print('B')
+
+#왜 sys로 하면 런타임에러뜨고 input으로 하니까 해결?

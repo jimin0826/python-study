@@ -21,3 +21,5 @@ for i in range(b):
   extracted_list = mylist[p-1 : q]
   bub_extractedlist = bubbleSort(extracted_list)
   print(bub_extractedlist[r-1])
+
+#되긴 하는데 시간초과.

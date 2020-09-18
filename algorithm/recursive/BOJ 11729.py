@@ -14,4 +14,4 @@ hanoi(n, 1, 2, 3)
 print(len(paths))
 
 for path in paths:
-  print(*path)
+  print(*path) 
