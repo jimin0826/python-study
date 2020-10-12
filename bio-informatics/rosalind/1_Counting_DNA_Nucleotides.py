@@ -1,5 +1,4 @@
-# rosalind BioInformatics Stronghold 
-# Counting DNA Nucleotides
+# Counting DNA Nucleotides 
 import sys
 
 dna_string = input()
@@ -16,5 +15,3 @@ print(
   counting_dna['G'],
   counting_dna['T']
 )
-
-# print(*map(input().count, "ACGT"))

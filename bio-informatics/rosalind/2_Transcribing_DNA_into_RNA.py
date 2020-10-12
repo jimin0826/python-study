@@ -1,3 +1,5 @@
+# Transcribing DNA into RNA
+
 import sys
 
 dna_string = sys.stdin.readline().strip()
