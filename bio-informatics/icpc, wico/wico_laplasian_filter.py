@@ -80,7 +80,8 @@ plt.plot(H1, color='r', label='H1')
 plt.plot(H2, color='b', label='H2')
 plt.legend(loc='best')
 plt.show()
-output
+
+#output
 EMD(S1, S2, DIST_L1) = 18.341209411621094
 EMD(S1, S2, DIST_L2) = 18.341209411621094
 EMD(S1, S2, DIST_C) = 18.341209411621094
