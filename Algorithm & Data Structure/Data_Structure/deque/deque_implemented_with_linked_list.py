@@ -35,7 +35,7 @@ class DoublyLinkedList:
 		self.head.right = None
 
 	def delete_tail(self):
-		self.tail = sefl.tail.right
+		self.tail = self.tail.right
 		self.tail.left.right = None
 		self.tail.left = None
 
@@ -58,7 +58,7 @@ class DoublyLinkedList:
 			self.head.right.left = None
 			self.head.right = None
 		elif(cur == self.tail):
-			self.tail = sefl.tail.right
+			self.tail = self.tail.right
 			self.tail.left.right = None
 			self.tail.left = None
 		else:
