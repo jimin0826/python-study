@@ -93,7 +93,7 @@ const HomeScreen = props => {
             </Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => props.navigation.navigate('Stat')}>
           <View style={[styles.menubox, {backgroundColor: colors[5]}]}>
             <EntypoIcons name="bar-graph" size={40} color="#000000" style={{ marginTop: -10}}/>
             <Text style={{textAlign: 'center', marginTop: 10}}>

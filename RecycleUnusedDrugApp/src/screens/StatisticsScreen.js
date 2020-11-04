@@ -27,7 +27,7 @@ const colors = {
 
 const StatisticsScreen = props => {
   return (
-  <View style={{width: screenWidth, flexDirection: 'column', alignItems: 'stretch'}}>
+  <View style={{width: screenWidth, flexDirection: 'column', alignItems: 'center'}}>
     <Header />
     <View style={{width: screenWidth, height: 100, flexDirection: 'column', backgroundColor: colors[0],
         justifyContent: 'space-around', paddingLeft: 15}}>
@@ -47,95 +47,32 @@ const StatisticsScreen = props => {
         </Text>
       </TouchableOpacity>
     </View>
-    <View>
-      {/* 첫 번째 행 */}
-      <View style={{display: 'flex', flexDirection: 'row', justifyContent: "center", alignItems: 'center'}}>
-        <TouchableOpacity>
-          <View style={[styles.menubox, {backgroundColor: colors[1]}]}>
-            <MaterialIcons name="eco" size={40} color="#000000" style={{ marginTop: -10}}/>
-            <Text style={{textAlign: 'center', marginTop: 10}}>
-              {'폐의약품\n환경영향정보'}
+    <View style={{height: 30}} />
+    <View style={{width: screenWidth - 60, shadowColor: '#000000', shadowOffset: { width: 2, height: 10 }, 
+        shadowOpacity: 0.23, shadowRadius: 2.62, elevation: 4, backgroundColor: '#FFFFFF', padding: 10, borderRadius: 10}}>
+        <View>
+          <Text style={{fontSize: 16, fontWeight: 'bold', alignSelf: 'center'}}>
+            저번주 수거 통계
+          </Text>
+        </View>
+        <View style={{height: 10}} />
+        <View style={{flexDirection: 'row', justifyContent: 'center'}}>
+          <View style={{width: 100, height: 40,  alignItems: 'center'}}>
+            <Text style={{fontSize: 16, fontWeight: 'bold'}}>
+              수거 인원
+            </Text>
+            <Text>
+              54 명
             </Text>
           </View>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <View style={[styles.menubox, {backgroundColor: colors[5]}]}>
-            <FontAwesomeIcons name='search' size={35} color="#000000" style={{ marginTop: -10}}/>
-            <Text style={{textAlign: 'center', marginTop: 15}}>
-              {'폐의약품\n정보 검색'}
+          <View style={{width: 50}} />
+          <View>
+            <Text>
+              수거 개수
             </Text>
           </View>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <View style={[styles.menubox, {backgroundColor: colors[3]}]}>
-            <MaterialIcons name="access-alarm" size={40} color="#000000" style={{ marginTop: -10}}/>
-            <Text style={{textAlign: 'center', marginTop: 10}}>
-              {'수거 과정\n알리미'}
-            </Text>
-          </View>
-        </TouchableOpacity>
-      </View>
-      {/* 두 번째 행 */}
-      <View style={{display: 'flex', flexDirection: 'row', justifyContent: "center", alignItems: 'center'}}>
-        <TouchableOpacity>
-          <View style={[styles.menubox, {backgroundColor: colors[2]}]}>
-            <FontistoIcons name="doctor" size={40} color="#000000" style={{ marginTop: -10}}/>
-            <Text style={{textAlign: 'center', marginTop: 10}}>
-              {'나의\n의사선생님'}
-            </Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <View style={[styles.menubox, {backgroundColor: colors[4]}]}>
-            <MaterialIcons name="control-point" size={40} color="#000000" style={{ marginTop: -10}}/>
-            <Text style={{textAlign: 'center', marginTop: 10}}>
-              {'폐의약품\n포인트 관리'}
-            </Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <View style={[styles.menubox, {backgroundColor: colors[5]}]}>
-            <EntypoIcons name="bar-graph" size={40} color="#000000" style={{ marginTop: -10}}/>
-            <Text style={{textAlign: 'center', marginTop: 10}}>
-              {'폐의약품\n수거 통계'}
-            </Text>
-          </View>
-        </TouchableOpacity>
-      </View>
-      <View style={{display: 'flex', flexDirection: 'row', justifyContent: "center", alignItems: 'center'}}>
-        <TouchableOpacity>
-          <View style={[styles.menubox, {backgroundColor: colors[3]}]}>
-            <FontAwesomeIcons name="newspaper-o" size={40} color="#000000" style={{ marginTop: -10}}/>
-            <Text style={{textAlign: 'center', marginTop: 10}}>
-              {'폐의약품\n법령/뉴스'}
-            </Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity onPress = {() => props.navigation.navigate('Map')}>
-          <View style={[styles.menubox, {backgroundColor: colors[1]}]}>
-            <EntypoIcons name="map" size={40} color="#000000" style={{ marginTop: -10}}/>
-            <Text style={{textAlign: 'center', marginTop: 10}}>
-              {'폐의약품\n수거지 검색'}
-            </Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <View style={[styles.menubox, {backgroundColor: colors[2]}]}>
-            <AntDesign name="notification" size={40} color="#000000" style={{ marginTop: -10}}/>
-            <Text style={{textAlign: 'center', marginTop: 10}}>
-              {'폐의약품\n수거앱 알리기'}
-            </Text>
-          </View>
-        </TouchableOpacity>
-      </View>
+        </View>
     </View>
-    <TouchableOpacity onPress = {() => props.navigation.navigate('UserLogin')}>
-      <View style={{height: 100, backgroundColor: '#FFFFFF', justifyContent: 'center', alignItems: 'center'}}>
-        <Text style={{color: '#000000', fontSize: 16, marginTop: -20, textAlign: 'center'}}>
-          {'더욱 자세한 내용은 보건소 홈페이지를 참고하세요\n바로가기 >>'}
-        </Text>
-      </View>
-    </TouchableOpacity>
   </View>
   );
 };
